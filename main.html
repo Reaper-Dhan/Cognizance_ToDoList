@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="noindex" />
+    <title>To-do List App </title>
+    <link rel="stylesheet" href="css/structure.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <div>
+            <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_lcmpz7.json" background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay></lottie-player>
+        </div>
+        &emsp;&ensp;
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+            <ul>
+                <li><a href="main.html">To-Do List App</a></li>
+            </ul>
+        </nav>
+    </div>
+    <br><br>
+    <div id="content">
+        <div class="container">
+            <h1>To-do List App</h1>
+            <br><br>
+            <div class="row">
+                <div class="six columns">
+                    <label for="addtask"><h3>Add Task...</h3></label>
+                    <form action="#" id="form">
+                        <label for="addtask"></label>
+                        <textarea id="addtask" class="u-full-width"></textarea>
+                        <input type="submit" class="button u-full-width button-primary" value="Add Task">
+                    </form>
+                </div>
+                &emsp;
+                <div class="six columns">
+                    <h3>Tasks Scheduled...</h3>
+                    <div id="task-list"></div>
+                    <br>
+                    <hr>
+                    <hr>
+                    <br>
+                    <center>
+                        <h3>Completed Tasks...</h3>
+                    </center>
+                    <div id="checked-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
+
+<style>
+    nav a {
+        font-family: 'Berkshire Swash', cursive;
+        color: rgb(54, 224, 247) !important;
+        font-size: 24px;
+    }
+    
+    h1 {
+        font-family: 'Graduate', cursive;
+    }
+    
+    h3 {
+        font-family: 'Graduate', cursive;
+    }
+    
+    #content {
+        font-family: 'Glass Antiqua', cursive;
+    }
+</style>

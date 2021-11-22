@@ -1,0 +1,92 @@
+body {
+    background: #000000e7;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 60px;
+    color: rgb(250, 148, 23);
+}
+
+h3 {
+    text-align: center;
+    color: rgb(195, 247, 137)
+}
+
+#content {
+    margin-left: 80px;
+}
+
+#task-list {
+    color: rgb(205, 113, 241)
+}
+
+.checked-task {
+    float: right;
+    cursor: pointer;
+    color: aqua;
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+.remove-task {
+    float: right;
+    cursor: pointer;
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.remove-task:hover {
+    float: right;
+    cursor: pointer;
+    color: rgb(97, 26, 26);
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.complete-task,
+.complete-task:hover {
+    cursor: pointer;
+    color: rgb(14, 241, 45);
+    text-decoration-line: line-through;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    background: rgb(248, 72, 72);
+    padding: 10px;
+    height: 100px;
+}
+
+nav {
+    flex: 2;
+    text-align: left;
+    padding-bottom: 12px;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+    margin-top: 22px;
+}
+
+nav a:hover {
+    color: rgb(53, 73, 245) !important;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
